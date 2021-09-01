@@ -82,13 +82,13 @@ private:
    int size;
 public:
     string Print_type(int value) {
-        size = value + 1;
-        cout << "Size_1: " <<size << endl;
-        size = size + value;
-        cout << "Size_2: " << size << endl;
+        size = value;
+        cout << size << endl;
+        size = size + value + 1;
+        cout << "Size: " << size << endl;
         if (size%2 == 0) {
-            return "Great";
-        } else return "Bee";
+            return "Great!";
+        } else return "no";
     }
 };
 
